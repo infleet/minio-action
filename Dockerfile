@@ -1,4 +1,4 @@
-FROM docker:stable
+FROM docker:dind
 
 COPY entrypoint.sh /entrypoint.sh
 
