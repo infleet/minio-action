@@ -6,6 +6,6 @@ sh -c "docker run \
   -p \"${INPUT_PORT}:9000\" \
   -e MINIO_ROOT_USER=\"${INPUT_USERNAME}\" \
   -e MINIO_ROOT_PASSWORD=\"${INPUT_PASSWORD}\" \
-  minio/minio:${INPUT_VERSION} \
+  ${image}:${INPUT_VERSION} \
   server /data --address=0.0.0.0:9000 \
 "
