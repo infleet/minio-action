@@ -5,6 +5,10 @@ branding:
   icon: fast-forward
   color: blue
 inputs:
+  image:
+    description: "container image with container registry"
+    required: false
+    default: "quay.io/minio/minio"
   version:
     description: "Version of MinIO"
     required: false
